@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Pengaduan</title>
+    <link rel="stylesheet" href="h2.css">
+</head>
+<body>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="file 2.html">Ajukan Pengaduan</a>
+        <a href="file 3.html">Kontak Kami</a>
+     </div>
+
+
+    <header>
+        <h1>Form Pengaduan</h1>
+        <h4>Semua keluhan Adik Sanak akan kami proses. Mohon menunggu balasan dari kami segera.</h4>
+    </header>
+    <div class="container">
+        <h2>Form Pengaduan</h2>
+        <form action="http://localhost/proses.php" method="POST">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="complaint">Deskripsi Pengaduan:</label>
+            <textarea id="complaint" name="complaint" required></textarea>
+
+            <label for="category">Kategori Pengaduan:</label>
+            <select id="category" name="category" required>
+                 <option value="Infrastruktur">Infrastruktur</option>
+                <option value="Lingkungan">Lingkungan</option>
+                <option value="Keamanan">Keamanan</option>
+                <option value="Kesehatan">Kesehatan</option>
+                <option value="Pendidikan">Pendidikan</option>
+                <option value="Ketenagakerjaan">Ketenagakerjaan</option>
+                <option value="Sarana dan Prasarana">Sarana dan Prasarana</option>
+                <option value="Teknologi">Teknologi</option>
+                <option value="Komunikasi">Komunikasi</option>
+                <option value="Sumber Daya">Sumber Daya</option>
+                <option value="Pelayanan Perizinan">Pelayanan Perizinan</option>
+            </select>
+
+        <label for="department">Ditujukan Untuk:</label>
+        <select id="department" name="department" required>
+                <option value="Dinas Pendidikan">Dinas Pendidikan</option>
+                <option value="Dinas Lingkungan Hidup">Dinas Lingkungan Hidup</option>
+                <option value="Dinas Pariwisata">Dinas Pariwisata</option>
+                <option value="Dinas Kesehatan">Dinas Kesehatan</option>
+                <option value="Dinas PUPR">Dinas PUPR</option>
+                <option value="Dinas Perhubungan">Dinas Perhubungan</option>
+                <option value="Dinas Komunikasi dan Informatika">Dinas Komunikasi dan Informatika</option>
+                <option value="Dinas Sosial">Dinas Sosial</option>
+                <option value="Dinas Ketenagakerjaan">Dinas Ketenagakerjaan</option>
+                <option value="Dinas Ketahanan Pangan">Dinas Ketahanan Pangan</option>
+                <option value="Dinas Kependudukan dan Catatan Sipil">Dinas Kependudukan dan Catatan Sipil</option>
+                <option value="Dinas Perpustakaan">Dinas Perpustakaan</option>
+                <option value="Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu">Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu</option>
+        </select>
+
+            <button type="submit">Kirim Pengaduan</button>
+        </form>
+        <a href="file 3.html" class="next">Next →</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pusat Pengaduan Masyarakat</p>
+    </footer>
+</body>
+</html>
